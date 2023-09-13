@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.65;
+    box-sizing: border-box;
+    background-color: peru;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside1 main aside2"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    margin: 50px 20%;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHeader {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+#sidebar_1 {
+    grid-area: aside1;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside ul li{
+    list-style-type: none;
+}
+
+aside ul li a{
+    text-align: center;
+    margin-left: -2.5rem;
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+main {
+    grid-area: main;
+    background-color: orangered;
+    padding: 10px;
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+}
+
+#sidebar_2 {
+    grid-area: aside2;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar_2 p{
+    text-align: justify;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkorange;
+    text-align: center;
+    color: blue;
+}
+
+.sidebar {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
